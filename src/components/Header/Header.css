@@ -12,7 +12,7 @@
   
   .searchBar {
     position: relative;
-    width: 480px;
+    width: 50%;
   }
   
   .searchBar input {
