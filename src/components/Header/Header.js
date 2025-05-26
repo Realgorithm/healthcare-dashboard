@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import { FiSearch, FiBell, FiPlus } from "react-icons/fi";
-import { FaUserCircle } from "react-icons/fa";
 
 function Header() {
   return (
