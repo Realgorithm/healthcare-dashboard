@@ -1,0 +1,28 @@
+@import '../../../styles/variables.css';
+.upcomingSchedule {
+    padding: 20px;
+  }
+  
+  .upcomingSchedule h3 {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  .dayGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .appointmentBox{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .dayGroup h4 {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }

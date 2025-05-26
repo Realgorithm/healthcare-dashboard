@@ -1,0 +1,47 @@
+@import '../../../styles/variables.css';
+
+.activitySection {
+  background-color: var(--back-color);
+  border-radius: 10px;
+  padding: var(--spacing-md);
+  box-shadow: var(--box-shadow);
+  margin: var(--spacing-md);
+}
+.activityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.activityTitle {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.daysContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.activityImg{
+  width: 100%;
+  object-fit: cover;
+}
+.dayBox {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.appointmentCount {
+  font-size: 14px;
+  color: var(--dark-gray);
+  margin: 0;
+  text-align: center;
+}

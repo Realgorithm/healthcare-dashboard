@@ -1,0 +1,80 @@
+@import "../../../styles/variables.css";
+/* Calendar.css */
+.calendar-container {
+  padding: 15px;
+}
+
+.calendar-title {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  display: flex;
+  justify-content:space-between;
+}
+
+.calendar-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.calendar-cell {
+  padding: 7px 0;
+  text-align: center;
+  min-height: 40px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.calendar-row{
+  margin: 10px;
+}
+
+.date-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.time-slot {
+  font-size: 0.9rem;
+}
+
+
+.day-header.today {
+  background-color: var(--light-gray);
+}
+
+.time-slot.today {
+  background-color: var(--light-gray);
+}
+
+.time-slot.has-appointment {
+  color: var(--white);
+  background-color: var(--dark-gray);
+  font-weight: 600;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px;
+}
+.time-slot.has-appointment.today{
+  background-color: var(--primary-color);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .calendar-cell {
+    padding: 8px 4px;
+    font-size: 0.85rem;
+  }
+  
+  .time-header {
+    padding-right: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .date-number {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

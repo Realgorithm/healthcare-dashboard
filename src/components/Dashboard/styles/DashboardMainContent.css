@@ -1,0 +1,31 @@
+@import '../../../styles/variables.css';
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 50% auto; /* Left = 20%, Right = 80% */
+  gap: var(--spacing-lg);
+  background-color: var(--white);
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Left section (sidebar, etc.) */
+.leftSectionDashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Right section (main content) */
+.rightSectionDashboard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  background-color: var(--back-color) !important;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+  }
+}

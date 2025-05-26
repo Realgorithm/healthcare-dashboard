@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import DashboardMainContent from "./components/Dashboard/DashboardMainContent";
+import { anatomyItems } from "./data/anatomyItems";
+import { healthData } from "./data/healthData";
+import { upcomingAppointments } from "./data/appointments";
+import { navigationItems } from "./data/navigation";
+import { calendarData } from "./data/calendar";
+import  "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="leftSectionApp">
+        <Sidebar items = {navigationItems}/>
+      </div>
+      <div className="rightSectionApp">
+        <Header />
+        <DashboardMainContent  anatomyItems = {anatomyItems} calendarData ={calendarData} upcomingAppointments = {upcomingAppointments} healthData ={healthData}/>
+      </div>
     </div>
   );
 }
